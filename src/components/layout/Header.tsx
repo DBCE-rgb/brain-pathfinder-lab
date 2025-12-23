@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.jpeg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -42,9 +43,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-xl">B</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="BrainDevelop - 360° Left & Right Brain" 
+              className="h-12 w-auto object-contain"
+            />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg text-foreground leading-tight">BrainDevelop</span>
               <span className="text-xs text-muted-foreground leading-tight">Career Intelligence</span>
