@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages - change 'braindevelop' to your repo name
-  base: mode === "production" ? "/braindevelop/" : "/",
+  // Use relative base path for GitHub Pages compatibility
+  base: "./",
   server: {
     host: "::",
     port: 8080,
