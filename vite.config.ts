@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages
-  base: mode === "production" ? "/brain-pathfinder-lab/" : "/",
+  // Base path for custom domain - use root path
+  base: "/",
   server: {
     host: "::",
     port: 8080,
