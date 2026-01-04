@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.jpeg";
 
@@ -19,24 +19,6 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
-      {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:+919805500827" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">+91 98055 00827</span>
-            </a>
-            <span className="hidden md:flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              Solan, HP | Zirakpur, Punjab
-            </span>
-          </div>
-          <span className="text-primary-foreground/80 hidden sm:block">
-            Established 2021 | 1000+ Students Guided
-          </span>
-        </div>
-      </div>
 
       {/* Main navigation */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

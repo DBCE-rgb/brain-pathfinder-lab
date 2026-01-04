@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Mail, Clock } from "lucide-react";
+import { Phone, MapPin, Mail, Clock, Facebook } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -115,6 +115,15 @@ export const Footer = () => {
               © {new Date().getFullYear()} BrainDevelop Career Intelligence. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
+              <a 
+                href="https://www.facebook.com/share/1Bmg9tqnrv/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-foreground/60 hover:text-accent transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
               <Link to="/privacy" className="text-primary-foreground/60 hover:text-accent text-sm transition-colors">
                 Privacy Policy
               </Link>
