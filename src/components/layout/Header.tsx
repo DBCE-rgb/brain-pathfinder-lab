@@ -29,7 +29,7 @@ export const Header = () => {
             </a>
             <span className="hidden md:flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              Solan, Himachal Pradesh
+              Solan, HP | Zirakpur, Punjab
             </span>
           </div>
           <span className="text-primary-foreground/80 hidden sm:block">
