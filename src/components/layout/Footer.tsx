@@ -51,12 +51,27 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 text-accent shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">
-                  2nd Floor, Thakur Complex,<br />
-                  Above Utkarsh Bank,<br />
-                  Kotlanala Chowk, Solan,<br />
-                  Himachal Pradesh – 173212
-                </span>
+                <div className="text-primary-foreground/80 text-sm">
+                  <p className="font-medium text-primary-foreground mb-1">Solan Office</p>
+                  <span>
+                    2nd Floor, Thakur Complex,<br />
+                    Above Utkarsh Bank,<br />
+                    Kotlanala Chowk, Solan,<br />
+                    Himachal Pradesh – 173212
+                  </span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-0.5 text-accent shrink-0" />
+                <div className="text-primary-foreground/80 text-sm">
+                  <p className="font-medium text-primary-foreground mb-1">Zirakpur Office</p>
+                  <span>
+                    Block-A, 4th Floor - 409,<br />
+                    Chandigarh City Centre (CCC),<br />
+                    VIP Road, Zirakpur,<br />
+                    Punjab – 140603
+                  </span>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />

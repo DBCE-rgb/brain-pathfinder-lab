@@ -42,11 +42,15 @@ export const CTASection = () => {
           </Button>
         </div>
 
-        <div className="mt-12 flex items-center justify-center gap-2 text-primary-foreground/70">
-          <MapPin className="h-5 w-5" />
-          <span>
-            2nd Floor, Thakur Complex, Above Utkarsh Bank, Kotlanala Chowk, Solan, HP – 173212
-          </span>
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-primary-foreground/70 text-sm">
+          <div className="flex items-center gap-2">
+            <MapPin className="h-5 w-5 shrink-0" />
+            <span>Solan: 2nd Floor, Thakur Complex, Kotlanala Chowk, HP – 173212</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPin className="h-5 w-5 shrink-0" />
+            <span>Zirakpur: Block-A, 4th Floor - 409, CCC, VIP Road, Punjab – 140603</span>
+          </div>
         </div>
       </div>
     </section>

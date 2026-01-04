@@ -108,12 +108,27 @@ const ContactPage = () => {
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
+                    <h3 className="font-semibold text-foreground mb-1">Solan Office</h3>
                     <p className="text-muted-foreground text-sm">
                       2nd Floor, Thakur Complex,<br />
                       Above Utkarsh Bank,<br />
                       Kotlanala Chowk, Solan,<br />
                       Himachal Pradesh – 173212
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="h-6 w-6 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Zirakpur Office</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Block-A, 4th Floor - 409,<br />
+                      Chandigarh City Centre (CCC),<br />
+                      VIP Road, Zirakpur,<br />
+                      Punjab – 140603
                     </p>
                   </div>
                 </div>
@@ -282,13 +297,27 @@ const ContactPage = () => {
       </section>
 
       {/* Map Placeholder */}
-      <section className="h-96 bg-muted relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-            <p className="text-muted-foreground">
-              2nd Floor, Thakur Complex, Kotlanala Chowk, Solan, HP
-            </p>
+      <section className="py-12 bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="h-64 bg-card rounded-xl border border-border flex items-center justify-center">
+              <div className="text-center">
+                <MapPin className="h-10 w-10 text-muted-foreground mx-auto mb-3" />
+                <p className="font-semibold text-foreground mb-1">Solan Office</p>
+                <p className="text-muted-foreground text-sm">
+                  2nd Floor, Thakur Complex, Kotlanala Chowk, Solan, HP
+                </p>
+              </div>
+            </div>
+            <div className="h-64 bg-card rounded-xl border border-border flex items-center justify-center">
+              <div className="text-center">
+                <MapPin className="h-10 w-10 text-muted-foreground mx-auto mb-3" />
+                <p className="font-semibold text-foreground mb-1">Zirakpur Office</p>
+                <p className="text-muted-foreground text-sm">
+                  Block-A, 4th Floor - 409, CCC, VIP Road, Zirakpur, Punjab
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
